@@ -16,33 +16,14 @@ namespace MongoConsole
 
         static void Main(string[] args)
         {
-            string connectionString = "mongodb://localhost:27017";
-            MongoClient client = new MongoClient(connectionString);
-            GetDatabaseNames(client).GetAwaiter().GetResult();
+            
             //  GetDatabaseNames(client);
             //  IMongoDatabase database = client.GetDatabase("test");
 
         }
-        private static async Task GetDatabaseNames(MongoClient client)
+        private static void GetDatabaseNames()
         {
-            using (var cursor = await client.ListDatabasesAsync())
-            {
-                var databaseDocuments = await cursor.ToListAsync();
-                foreach (var databaseDocument in databaseDocuments)
-                {
-                    // if (databaseDocument["name"] == "local")
-                    client.DropDatabase("Delete");
-                    client.
-
-
-                        DropDatabase
-
-                    Console.WriteLine(databaseDocument["name"]);
-
-
-
-                }
-            }
+            Console.WriteLine("Hello ");
         }
 
 
