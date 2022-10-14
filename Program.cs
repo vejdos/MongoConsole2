@@ -23,7 +23,7 @@ namespace MongoConsole
         }
         private static void GetDatabaseNames()
         {
-            Console.WriteLine("Hello Git!!! New node! OK");
+            Console.WriteLine("Hello Git!!! New node! OK Yes");
         }
 
 
